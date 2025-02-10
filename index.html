@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KORADA NIKHITHA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            color: #333;
+            box-sizing: border-box;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .header-text p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+            color: #d4f1d1;
+        }
+        nav a.active {
+            border-bottom: 2px solid white;
+        }
+        .section {
+            padding: 2rem;
+            animation: fadeIn 1s ease;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .about, .skills, .projects, .contact {
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            transition: text-shadow 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            color: #66BB6A;
+        }
+        footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-top: 2px solid #4CAF50;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            .header-text h1 {
+                font-size: 3rem;
+            }
+            nav {
+                margin-top: 1rem;
+                text-align: center;
+            }
+            nav a {
+                display: inline-block;
+                margin: 0.5rem;
+            }
+            .section {
+                padding: 1rem;
+            }
+        }
+		        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            perspective: 1000px;
+        }
+
+        table th, table td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+        }
+
+        table th {
+            background: #4CAF50;
+            color: white;
+        }
+
+        table td {
+            color: #333;
+        }
+
+        table td:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform: rotateX(10deg) rotateY(10deg);
+        }
+
+        table th, table td {
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="silpa.png" alt="Profile Photo" class="profile-photo">
+            <div class="header-text">
+                <h1>SRAVANI GORAKALA</h1>
+                <p>B.Tech Student | Specialization in Web Development </p>
+            </div>
+        </div>
+        <nav>
+            <a href="#about" class="active">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="section about" id="about">
+        <h2>ABOUT ME</h2>
+        <p>Hello! I'm Sravani Gorakala, a passionate B.Tech student specializing in Computer Science. I love exploring technologies like web development and data science. My goal is to innovate and solve real-world problems through coding.</p>
+    </div>
+    <div class="section about" id="about">
+        <h2>CAREER OBJECTIVE:</h2>
+        <p>Seeking as position as a software developer within a solid team of professionals, that can utilize my broad skills and knowledge, provides opportunities for further growth and administers complex information systems that have software interfaces.</p>
+    </div>
+    <div class="section about" id="about">
+     <h1>Educational Qualification</h1>
+    <table>
+        <tr>
+            <th>Qualification</th>
+            <th>Discipline/Specialization</th>
+            <th>College</th>
+            <th>Board/University</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>B.Tech.</td>
+            <td>CSE</td>
+            <td>Avanthi’s ST THERESSA Institute of Engineering and Technology, Garividi</td>
+            <td>JNTUGV</td>
+            <td>Persuing</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>MPC</td>
+            <td>Sri Kumar Junior College, Haripuram</td>
+            <td></td>
+            <td>65%</td>
+        </tr>
+        <tr>
+            <td>10th</td>
+            <td>English Medium</td>
+            <td>K.G.B.V School</td>
+            <td>SSC</td>
+            <td>9.0 GPA</td>
+        </tr>
+    </table>
+
+    </div>
+	<div class="section skills" id="skills">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Proficiency in communication skills.</li>
+			<li>Quick learner and ability to work under pressure</li>
+			<li>Strongly initiative, creative and able to learn new technologies and systems.</li>
+			<li>Hardworking self-starter who can prioritize in order to meet deadlines.</li>
+			<li>Self-motivated and self-reliant, capable of working as part of a team.</li>
+
+        </ul>
+    </div>
+	
+    <div class="section skills" id="skills">
+        <h2>TECHNICAL SKILLS</h2>
+        <ul>
+            <li>Programming: C, Python, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript, React</li>
+            <li>Databases: MySQL, MongoDB</li>
+            <li>Tools: Git, VS Code</li>
+        </ul>
+    </div>
+    <div class="section skills" id="skills">
+        <h2>ROLES AND RESPONSIBILITIES:</h2>
+        <ul>
+            <li>Implementing programs</li>
+            <li>Implementing engineering projects</li>
+            <li>Trouble Shooting the computer</li>
+        </ul>
+    </div>
+		    <div class="section projects" id="projects">
+        <h2>INTERNSHIPS</h2>
+        <ul>
+            <li><strong>TEACH NOOK:</strong> <P>2 MONTHS INTERNSHIP ON DATA SCIENCE</P></li>
+            <li><strong>PYTHON & DJANGO:</strong> <P>2 MONTHS INTERNSHIP ON WEB DEVELOPMENT</P></li>
+            <li><strong>EDX:</strong> <P>INTERNSHIP ON PYTHON BASICS FOR DATA SCIENCE and WEB DEVELOPMENT WITH HTML5, CSS3 AND JAVASCRIPT</P></li>
+           	<li><strong>ALL CERTIFICATES:</strong> <a href="My_Certificates.html/" target="_blank">CERTIFICATES</a></li>
+       </ul>
+    </div>
+    <div class="section projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> <a href="../Student_Marks/" target="_blank">Student Marks Management</a> - Analyze and manage semester marks efficiently.</li>
+            <li><strong>Project 2:</strong> <a href="../Online_Learning/main.php" target="_blank">Online Training Courses</a> - we can easy to Learn the Courses</li>
+            <li><strong>Project 3:</strong> <a href="../cse_travels/index.html" target="_blank">Ticket Enquiry Management</a> - Ticket inquiry system for road, train, flight, and ship travel.</li>
+        </ul>
+    </div>
+ <div class="section about" id="about">
+    <h1>Personal Information</h1>
+    <table>
+        <tr>
+            <th>Father's Name</th>
+            <td>SURYA NARAYANA GORAKALA</td>
+        </tr>
+        <tr>
+            <th>Mother's Name</th>
+            <td>SAKUNTHALA GORAKALA</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>01-08-2004</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <th>Civilian</th>
+            <td>Indian</td>
+        </tr>
+        <tr>
+            <th>Languages Known</th>
+            <td>Telugu, English</td>
+        </tr>
+        <tr>
+            <th>Permanent Address</th>
+            <td>SRAVANI GORAKALA </br>DOOR NO: Y1-A, </br>NARAYANA PURAM (VILL),</br>HARIPURAM (POST), </br>SRIKAKULAM-532243</td>
+        </tr>
+    </table>
+ </div>
+    <div class="section contact" id="contact">
+        <h2>Contact : 9390383883</h2>
+        <p>Email: sravanigorakala2@gmail.com</p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/sravani-gorakala-018b762a0" target="_blank"><i class="fab fa-linkedin"></i> SRAVANI GORAKALA     </a></p>
+        <p>GitHub: <a href=" target="_blank"><i class="fab fa-github"></i> SRAVANI GORAKALA    </a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SRAVANI GORAKALA  Email : sravanigorakala2@gmail.com. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add active class to the current navigation link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
